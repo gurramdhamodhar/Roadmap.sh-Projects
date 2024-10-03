@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* navbar */
+.header{
+    padding: 0.5rem 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar_list{
+    display: flex;
+    gap: 4.8rem;
+}
+
+.header .navbar_links {
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+}
+
+.header .navbar_links:hover, 
+.header .navbar_links:active {
+    background-color: #2a808a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+}
+
+.mobile_nav_btn{
+    display: none;
+}
+
+.mobile_nav_btn .wrong-outline{
+    display: none;
+}
+
+/*header section*/
+.header_section{
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    line-height: 1.1;
+}
+
+
+/*Main Section*/
+.main_section{
+    padding: 5%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item{
+    padding: 5%;
+    border: 3px solid black;
+    border-style: dashed;
+    font-size: 1.4rem;
+    border-radius: 20px;
+}
+
+.item1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.item3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.item4{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.item h3{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.item p{    
+    margin-bottom: 10px;
+}
+
+.main_section .item a{
+    color: #2a808a;
+}
+
+/* testimonals section */
+.reviews_section{
+    padding: 0% 5%;
+    background-color: #fff;
+}
+
+.reviews_section h3{
+    font-size: 2rem;
+    color: #2a808a;
+}
+
+.reviews_section_div{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 1.4rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.reviews_section .reviews_section_div .div{
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0,0.9);  
+    color: white;
+    padding: 3%;
+}
+
+.reviews_section .reviews_section_div .div .p_1{
+    margin-top: 10px;
+}
+
+
+/* footer */
+.footer p{
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.footer_icons{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}

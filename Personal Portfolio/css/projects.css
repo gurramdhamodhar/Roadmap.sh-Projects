@@ -1,0 +1,132 @@
+.project_details{
+    padding: 5%;
+}
+
+.project_details_div1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 5%;
+}
+
+.project_details_div1_div1 img{
+    width: 450px;
+    height: 350px;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.project_details_div1_div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project_details_div1_div2 h3{
+    padding-top: 10px;
+    font-size: 1.8rem;
+}
+
+.project_details_div1_div2 p{
+    font-size: 1.4rem;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+/* 1212px */
+@media (max-width:75.75em){
+    .project_details_div1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 3% 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project_details_div1_div2 h3{
+        text-align: center;
+    }
+
+    .project_details_div1_div2 p{
+        text-align: center;
+        padding: 1% 10%;
+    }
+
+}
+
+/* 960px */
+@media (max-width:60em){
+    .project_details_div1_div2 p{
+        text-align: center;
+        padding: 2% 6%;
+    }
+
+    .project_details_div1_div1 img{
+        margin-top: 20px;
+    }
+}
+
+/* 752px */
+@media (max-width:47em){
+    .project_details_div1_div1 img{
+        width: 350px;
+        height: 250px;
+        border: 2px solid black;
+        object-fit: cover;
+    }
+
+    .project_details_div1_div2 p{
+        text-align: justify;
+        padding: 2% 4%;
+    }
+}
+
+/* 570px */
+@media (max-width:35.625em){
+    .project_details_div1_div1 img{
+        width: 350px;
+        height: 250px;
+        border: 2px solid black;
+        object-fit: cover;
+    }
+
+    .project_details_div1_div2 p{
+        font-size: 1.4rem;
+        padding: 3% 4%;
+        hyphens: auto;
+    }
+
+    .project_details_div1_div2 h3{
+        font-size: 1.6rem;
+    }
+}
+
+
+/* 430px */
+@media (max-width:26.875em){
+    .project_details_div1_div1 img{
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        object-fit: cover;
+    }
+
+    .project_details_div1_div2 p{
+        font-size: 1.3rem;
+        padding: 5% 0%;
+        hyphens: auto;
+    }
+
+    .project_details_div1_div2 h3{
+        font-size: 1.6rem;
+    }
+}
+
+/* 360px */
+@media(max-width:22.5em){
+    .project_details_div1_div1 img{
+        width: 300px;
+        height: 200px;
+    }
+}
